@@ -36,7 +36,6 @@ $datiutente= $conn->makeQueryassoc($sqlutente);
                // print_r($img);
             ?>
         </div>
-
     </div>
 
     <div class="datiutente">

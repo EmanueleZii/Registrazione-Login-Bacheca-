@@ -71,11 +71,14 @@ public function __construct()
       return false;
     }
   }
+  
 //cancellare dati
-   public function DeleteData ($table,$filter) {
+   public function DeleteData ($table,$filter) 
+   {
      $sql = "DELETE FROM ".$table." ".$filter;
      $sql = $this->conn->query($sql);
-     if($sql == true){
+     if($sql == true)
+     {
         return true;
       } else {
         return false;
