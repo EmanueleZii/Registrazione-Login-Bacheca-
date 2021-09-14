@@ -45,7 +45,7 @@ $datiutente= $conn->makeQueryassoc($sqlutente);
 
         <div>
             <?php
-               $sqlcommento= "SELECT `commento` FROM `commentiutenti` ";
+               $sqlcommento= "SELECT `Commenti` FROM `commentiutenti` ";
                $commentoutente= $conn->makeQueryall($sqlcommento);
             ?>
                 <?php 

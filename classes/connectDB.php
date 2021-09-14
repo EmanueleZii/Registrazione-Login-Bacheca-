@@ -5,8 +5,9 @@ class connectDb {
   private $host = "localhost";
   private $root = "root";
   private $pass = "";
-  private $nameDb = "photowebsite";
+  private $nameDb = "social";
   private $conn;
+
 //connettersi  al DB  
 public function __construct()
   {
@@ -15,9 +16,7 @@ public function __construct()
      if ($this->conn->connect_error) {
           die("connection Error". $this->conn->connect_error);
      } 
-    
   }
-
  //inserire i dati
   public function CreateData ($table,$columns,$values) {
     $sql = "INSERT INTO ".$table." ".$columns." VALUES ".$values;
@@ -80,9 +79,9 @@ public function __construct()
      if($sql == true)
      {
         return true;
-      } else {
+     }else {
         return false;
-      }
+     }
    }
 
 }
