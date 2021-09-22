@@ -22,16 +22,7 @@ $datiutente= $conn->makeQueryassoc($sqlutente);
        <a class="btn active" href="../classes/Viewprofile.php">View Profile</a>
        <a class="btn"  href="../classes/Homepage.php">HomePage</a>
     </nav>
-    <div class="image-profile">
-
-       
-        <div>
-            <?php
-                require "upload.php";
-               
-            ?>
-        </div>
-    </div>
+    <div class="profile">
 
     <div class="datiutente">
         <?php echo "<a> Firstname : ". $datiutente['firstname']. "</a>"; ?><br><br>
