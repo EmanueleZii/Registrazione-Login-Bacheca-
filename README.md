@@ -1,6 +1,8 @@
-# Social-Network-OOP
-Social-Network-OOP
-Un piccolo progetto realizzato da me di registrazione e login utente e l utente puo scrivere in bacheca 
+
+Registrazione-login-bacheca-commenti-OOP
+
+Un piccolo progetto realizzato da me,possibilità di registrazione e login, l utente puo scrivere in bacheca 
+
 linguaggi usati :
 -html
 -css
