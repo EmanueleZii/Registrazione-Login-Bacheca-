@@ -80,7 +80,7 @@ class ImageProfile {
         //@$dir = " C:\xampp\htdocs\Social network OOP\classes\uploads\ ". $_FILES['fileToUpload']['name'];
         @$image = $this->dir . $_FILES['fileToUpload']['name'];
         //@$imageFileType = strtolower(pathinfo($image,PATHINFO_EXTENSION));
-        echo "<img src='".$image."' ";
+        echo "<img src='".$image."' >";
     }
 
 
