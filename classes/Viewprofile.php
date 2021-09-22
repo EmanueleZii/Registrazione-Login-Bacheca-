@@ -24,16 +24,11 @@ $datiutente= $conn->makeQueryassoc($sqlutente);
     </nav>
     <div class="image-profile">
 
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" class="btn-image" value="Upload Image" name="submit">
-        </form>
+       
         <div>
             <?php
                 require "upload.php";
-                //$img = new ImageProfile();
-                $img->PrintImage();
-               // print_r($img);
+               
             ?>
         </div>
     </div>
