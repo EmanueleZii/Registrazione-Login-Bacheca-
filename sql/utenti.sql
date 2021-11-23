@@ -7,7 +7,7 @@ CREATE TABLE `utenti`(
 );
 
 CREATE TABLE `commentiutenti`(
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `id` INT NOT NULL PRIMARY KEY,
     `idcommento` INT NOT NULL AUTO_INCREMENT,
     `Commenti` VARCHAR(55) NOT NULL,
     FOREIGN KEY (`idcommento`) REFERENCES `utenti`(`id`)
