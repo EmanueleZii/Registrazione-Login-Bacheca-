@@ -29,6 +29,14 @@ public function __construct()
     }
   }
 
+  public function SaveData($sql){
+    
+    $this->conn->query($sql);
+    if ($sql==true)
+     return $sql;
+
+  }
+
   public function makeQueryarray($query) {
     $sql = $this->conn->query($query);
     $query = $sql->fetch_array();
@@ -44,7 +52,7 @@ public function __construct()
   public function makeQueryall($query) {
     $sql = $this->conn->query($query);
     $query = $sql->fetch_all();
-       return $query;
+    return $query;
   } 
 
   public function makeQueryassoc($query) {

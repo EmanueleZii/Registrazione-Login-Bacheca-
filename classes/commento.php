@@ -1,17 +1,21 @@
 <?php
 session_start();
 require "connectDB.php";
+
 $conn = new connectDb();
 
-class Commentosystem {
+$commento = filter_var($_POST['comment'], FILTER_SANITIZE_STRING);
 
+
+
+class Commentosystem 
+{
     public function insertComment(){
-       $commento = filter_var($_POST['commento'],FILTER_SANITIZE_STRING);
-       $conn =new connectDb();
-       $conn->CreateData(" `commentiutenti` "," (`Commenti`) "," ('$commento') ");
+       
+       $conn->SaveData("INSERT INTO `commenti` (`commento`) VALUES ('$commento')");
        header("Location: Homepage.php");
     }
 }
 
 $com = new Commentosystem();
-$com->insertComment();
+$com->insertComment();*/
