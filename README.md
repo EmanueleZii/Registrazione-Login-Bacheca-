@@ -1,7 +1,7 @@
 
 Registrazione-login-bacheca-commenti-OOP
 
-Un piccolo progetto realizzato da me,possibilità di registrazione e login, l utente puo scrivere in bacheca 
+E Un progetto,da la possibilità di registrazione e login,è l'utente puo scrivere in bacheca 
 
 linguaggi usati :
 -html
