@@ -1,5 +1,7 @@
 CREATE DATABASE `social`;
 
+USE `social`;
+
 CREATE TABLE `utenti`(
     `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
     `firstname` VARCHAR(55) NOT NULL,
@@ -10,7 +12,7 @@ CREATE TABLE `utenti`(
 
 CREATE TABLE `commenti`(
     `idcommento` INT NOT NULL,
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `commento` VARCHAR(255),
     FOREIGN KEY (`id`) REFERENCES `utenti`(`id`)
 );
